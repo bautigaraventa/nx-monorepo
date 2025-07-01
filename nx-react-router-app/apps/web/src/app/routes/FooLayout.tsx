@@ -13,7 +13,7 @@ export default function FooLayout() {
   const { labels } = useBreadcrumbs();
 
   return (
-    <div className="space-y-2 max-w-3xl mx-auto">
+    <div className="space-y-2 max-w-3xl mx-auto p-4">
       <NavigationMenu />
       <Card className="max-w-3xl mx-auto mt-6">
         <CardHeader>

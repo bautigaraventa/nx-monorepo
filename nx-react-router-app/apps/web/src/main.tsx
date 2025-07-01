@@ -1,5 +1,9 @@
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {
+  createBrowserRouter,
+  Navigate,
+  RouterProvider,
+} from 'react-router-dom';
 import './styles.css';
 
 import FooLayout from './app/routes/FooLayout';
@@ -10,14 +14,7 @@ import { BreadcrumbProvider } from './lib/breadcrumb-context';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: (
-      <main className="flex flex-col items-center justify-center min-h-screen gap-4">
-        <h1 className="text-2xl font-bold">Home</h1>
-        <p className="text-gray-600">
-          Try visiting <code>/foo/bar/baz</code>
-        </p>
-      </main>
-    ),
+    element: <Navigate to="/foo" replace />,
   },
   {
     path: '/foo',

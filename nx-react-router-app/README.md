@@ -55,6 +55,14 @@ apps/
 To run the dev server for your app, use:
 
 ```sh
+cd nx-react-router-app
+```
+
+```
+npm install
+```
+
+```sh
 npx nx serve web
 ```
 

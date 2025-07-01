@@ -21,6 +21,7 @@ export default function RandomizeButton() {
       onClick={handleClick}
       disabled={loading}
       variant="outline"
+      className="bg-blue-500 text-white hover:bg-blue-600"
       size="sm"
     >
       {loading ? (
